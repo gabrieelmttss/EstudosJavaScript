@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Adivinhação Game</title>
+    </header>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script>
+    function pularLinha() {
+        document.write("<br><br>")
+    }
+        
+    function mostra(frase) {
+        document.write(frase)
+        pularLinha()
+    } 
+    var numeroPensado = 3;
+    var tentativa = 1;
+    var tentativasRestantes = 3;
+
+    while(tentativa <= 3){
+        var chute = parseInt(prompt("Faça seu chute no campo abaixo. Tentativas restantes: " + tentativasRestantes));
+        if (chute == numeroPensado) {
+            mostra("Você acertou, PARABÉNS!!!");
+            break;
+        }   else{
+            mostra("Você errou!");
+        }
+    tentativa++;
+    tentativasRestantes--;
+    }   
+    mostra("FIM");
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
